@@ -1,0 +1,24 @@
+{
+  "name": "random-access-storage-proxy",
+  "version": "0.0.0",
+  "description": "Proxy random access storage requests dynamically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc tape test.js"
+  },
+  "keywords": [
+    "random",
+    "access",
+    "storage",
+    "proxy"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "random-access-storage": "^1.4.0"
+  },
+  "devDependencies": {
+    "nyc": "^14.1.1",
+    "tape": "^4.11.0"
+  }
+}
