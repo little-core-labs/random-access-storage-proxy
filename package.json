@@ -1,6 +1,6 @@
 {
   "name": "random-access-storage-proxy",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Proxy random access storage requests dynamically.",
   "main": "index.js",
   "scripts": {
