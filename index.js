@@ -39,7 +39,7 @@ function proxy(target) {
   const storage = create({  })
 
   Object.assign(storage, {
-    setProxy(value) {
+    setTarget(value) {
       assert(null !== value && 'object' === typeof value)
       target = value
       configure()
@@ -52,7 +52,7 @@ function proxy(target) {
   })
 
   if (null !== target && 'object' === typeof target) {
-    storage.setProxy(target)
+    storage.setTarget(target)
   }
 
   return storage

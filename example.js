@@ -7,7 +7,7 @@ const second = proxy(memory)
 
 first.write(0, Buffer.from('hello'), (err) => {
   console.log(err);
-  first.setProxy(ram())
+  first.setTarget(ram())
   first.write(0, Buffer.from('bytes'), (err) => {
     first.read(0, 5, console.log)
   })

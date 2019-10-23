@@ -24,7 +24,7 @@ test('proxy([target])', (t) => {
           c.reset()
           c.write(0, goodbye, (err) => {
             t.ok(err)
-            c.setProxy(ram())
+            c.setTarget(ram())
             c.write(0, goodbye, (err) => {
               t.notOk(err)
               c.read(0, goodbye.length, (err, buffer) => {
